@@ -1,0 +1,102 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+body {
+    background-color: #203438;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 660px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+
+.to-do-list {
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+    box-sizing: border-box;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.task {
+    display: flex;
+    align-content: flex-start; 
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.add-another-task {
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+    box-sizing: border-box;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 20px;
+    background: #ffffff1a;
+}
+
+.add-another-task input {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+button {
+    border: none;
+    background: none;
+    margin-right: 10px;
+    padding: 0;
+    cursor: pointer;
+}
+
+button i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px !important;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+}
+
+button.completed-item i, button.new-item i {
+    background: #4caf50;
+}
+
+button.remove-item i {
+    background: #f44336;
+}
+h2 {
+    color: #fff;
+}
+p.task-text {
+    color: #666;
+    margin: 0;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
